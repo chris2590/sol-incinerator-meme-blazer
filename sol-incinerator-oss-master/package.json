@@ -1,16 +1,24 @@
 {
-  "name": "close-token-accounts",
+  "name": "sol-incinerator-meme-blazer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Meme Blazer frontend + burn script",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "burn": "tsc && node --env-file .env src/burn.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@project-serum/anchor": "^0.26.0",
     "@solana/spl-token": "^0.4.8",
     "@solana/web3.js": "^1.95.0",
-    "bs58": "^6.0.0"
+    "bs58": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.5.0",
+    "typescript": "^5.3.3"
   }
 }
