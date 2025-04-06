@@ -1,0 +1,35 @@
+/* src/styles.css */
+:root {
+  --primary-color: #8a2be2;
+  --secondary-color: #ff1493;
+  --background-color: #1a0033;
+  --card-background: #2a0052;
+  --text-color: #ffffff;
+  --accent-color: #00ffff;
+  --error-color: #ff4444;
+  --success-color: #44ff44;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* (Include the rest of your CSS from your original file here) */
