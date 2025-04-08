@@ -1,23 +1,23 @@
 {
-  "name": "sol-incinerator-meme-blazer",
+  "name": "memeblazer",
   "version": "1.0.0",
-  "description": "Solana token burning and account management tool",
+  "private": true,
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "burn": "tsc && node --env-file .env src/burn.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "author": "Crypto Chris",
-  "license": "ISC",
   "dependencies": {
-    "@project-serum/anchor": "^0.26.0",
-    "@solana/spl-token": "^0.4.8",
-    "@solana/web3.js": "^1.95.0",
-    "bs58": "^6.0.0",
-    "dotenv": "^16.0.3",
-    "typescript": "^5.0.4" 
+    "@solana/spl-token": "^0.3.8",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.34",
+    "@solana/wallet-adapter-wallets": "^0.19.23",
+    "@solana/web3.js": "^1.78.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.9"
+    "vite": "^4.3.9"
   }
 }
